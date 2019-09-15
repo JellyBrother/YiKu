@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/cart_list_item_pro_name"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:text="商品名称"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cart_list_item_pro_price"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:layout_gravity="center_vertical"
+        android:text="商品名称"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_store_product_item_count2"
+        android:layout_width="0dp"
+        android:layout_weight="1.7"
+        android:gravity="right"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView_store_product_item_reduce2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/image_reduce" />
+
+        <TextView
+            android:id="@+id/textView_store_product_item_buycount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/background_floating_material_dark"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/imageView_store_product_item_add2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/image_add" />
+    </LinearLayout>
+
+</LinearLayout>

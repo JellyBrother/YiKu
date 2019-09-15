@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="53dp"
+	    android:background="#00B0FB"
+	    android:padding="5dp"
+	    android:gravity="center_vertical"
+	    >
+	     <LinearLayout
+            android:id="@+id/yidian_title_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" 
+            android:clickable="true"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/back_w"
+                 />
+        </LinearLayout>
+	  
+	    <TextView
+	        android:id="@+id/street_tv" 
+	        android:layout_width="180dp"
+	        android:layout_height="wrap_content"
+	        android:text="樱花小区圣诞节送快递"
+	        android:textColor="#FFF"
+	        android:layout_centerInParent="true"
+	        android:singleLine="true"
+	        android:textSize="17sp"
+	        android:gravity="center"
+	        />
+	      <ImageView
+            android:id="@+id/street_tag"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:clickable="true"
+            android:src="@drawable/yidian_address" 
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/street_tv"
+            android:layout_marginRight="10dp"
+            />
+        
+	    <ImageView
+            android:id="@+id/login_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/yidian_people_center" />
+	</RelativeLayout>
+
+</LinearLayout>

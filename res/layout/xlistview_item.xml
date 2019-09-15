@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        >
+        
+        <TextView
+            android:id="@+id/xlist_view_date_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="2015-10-10"
+            />
+        
+        <TextView
+            android:id="@+id/xlist_view_name_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="在线咨询"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@id/xlist_view_date_tv"
+            />
+        
+        <TextView
+            android:id="@+id/xlist_view_cash_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="100 RMB"
+            android:textSize="16sp"
+            android:textColor="#ff6100"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/xlist_view_date_tv"
+            />
+        
+    </RelativeLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/xlistview_footer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+		
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="2015-10-19"
+            android:gravity="center"
+        	android:layout_height="wrap_content"
+            />
+        
+         <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="订单号：2015101911"
+        	android:layout_height="wrap_content"
+            />
+          <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="5期"
+            android:gravity="center"
+        	android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+        >
+        <ImageView 
+            android:layout_height="48dp"
+            android:layout_width="96dp"
+            android:src="@drawable/adv"
+            android:id="@+id/xlistview_item_icon_iv"
+            android:layout_marginLeft="10dp"
+            />
+        
+        <TextView
+            android:id="@+id/xlistview_service_name_tv"
+            android:layout_width="wrap_content"
+            android:text="推拿、针灸套餐"
+            android:gravity="center"
+            android:layout_toRightOf="@id/xlistview_item_icon_iv"
+            android:layout_centerVertical="true"
+        	android:layout_height="wrap_content"
+        	android:textSize="18sp"
+        	android:layout_marginLeft="5dp"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="¥45"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+        	android:layout_height="wrap_content"
+        	android:textSize="18sp"
+        	android:layout_marginRight="10dp"
+        	android:layout_alignParentRight="true"
+            />
+        
+    </RelativeLayout>
+    -->
+
+</LinearLayout>

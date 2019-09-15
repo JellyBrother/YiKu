@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/query_charge_pick_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pick_view_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#000"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="选择框"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/pick_view_list"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:choiceMode="singleChoice"
+            android:divider="#F1F0EE"
+            android:dividerHeight="1.0dip"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

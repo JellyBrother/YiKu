@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/all_pinglun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_btn_png"
+            android:gravity="center"
+            android:text="全部(0)"
+            android:textColor="#FFF"
+            android:textSize="13sp" 
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/top_pinglun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_view_border_two"
+            android:gravity="center"
+            android:text="好评(0)"
+            android:textColor="#000"
+            android:textSize="13sp" 
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/center_pinglun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_view_border_two"
+            android:gravity="center"
+            android:text="中评(0)"
+            android:textColor="#000"
+            android:textSize="13sp" 
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/bottom_pinglun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_view_border_two"
+            android:gravity="center"
+            android:text="差评(0)"
+            android:textColor="#000"
+            android:textSize="13sp" 
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"          
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="3dp"
+        android:background="#f1f0ee" />
+
+    <com.jack.ui.XListView
+        android:id="@+id/store_pinglun_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:cacheColorHint="#00000000" 
+        android:childIndicatorLeft="0dp"
+        android:fadingEdge="none"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000"
+        android:scrollbars="none" >
+    </com.jack.ui.XListView>
+
+</LinearLayout>

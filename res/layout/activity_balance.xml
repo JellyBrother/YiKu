@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back_ground"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <include layout="@layout/activity_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/balance_show_cash_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/balance_detail_item"
+            android:drawableLeft="@drawable/balance1"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:text="账户余额  0元"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/balance_online_recharge_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFF"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_back_ground" />
+
+            <TextView
+                android:id="@+id/balance_recharge_online_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/balance2"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/balance_right"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:text="账户充值"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <include layout="@layout/activity_line_layout" />
+
+        <TextView
+            android:id="@+id/balance_detail_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/balance3"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/balance_right"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text="收支明细"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

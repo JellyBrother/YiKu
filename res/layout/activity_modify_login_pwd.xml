@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back_ground" >
+    
+    <include android:id="@+id/register_title_layout"
+        layout="@layout/activity_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_title_layout"
+        android:layout_marginTop="30dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/modify_login_pwd_icon" />
+
+                <EditText
+                    android:id="@+id/modify_login_pwd_init_et"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="6"
+                    android:layout_marginRight="5dp"
+                    android:hint="请输入原始密码"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+            <include layout="@layout/activity_line_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/modify_login_pwd_icon" />
+
+                <EditText
+                    android:id="@+id/modify_login_pwd_pwd_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:layout_marginRight="5dp"
+                    android:inputType="textPassword"
+                    android:hint="请输入新密码"
+                    android:maxLength="6"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+            <include layout="@layout/activity_line_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/modify_login_pwd_icon" />
+
+                <EditText
+                    android:id="@+id/modify_login_pwd_re_pwd_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="请重新输入新密码"
+                    android:singleLine="true"
+                    android:maxLength="6"
+                    android:layout_marginRight="5dp"
+                    android:inputType="textPassword"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/modify_login_pwd_modify_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/login_btn_png"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"
+                android:text="保存" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

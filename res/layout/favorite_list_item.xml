@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_back_ground" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/favorite_product_image_iv"
+            android:layout_width="108dp"
+            android:layout_height="96dp"
+            android:padding="10dp"
+            android:src="@drawable/app_default_icon" >
+            </com.android.volley.toolbox.NetworkImageView>
+
+        <TextView
+            android:id="@+id/favorite_product_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/favorite_product_image_iv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/favorite_product_name_tv"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/favorite_product_image_iv"
+            android:max="5"
+            android:clickable="false"
+            android:rating="3" />
+        
+        <TextView
+            android:id="@+id/favorite_list_xiaoshou_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/favorite_product_name_tv"
+            android:text="月销售0单"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+             android:layout_marginTop="8dp"
+             android:textSize="11sp"
+            android:layout_toRightOf="@id/ratingBar1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar1"
+            android:layout_toRightOf="@id/favorite_product_image_iv"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/favorite_product_qisongjia_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="起送价 ¥0"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/shuxian" />
+
+            <TextView
+                android:id="@+id/favorite_product_peisongfei_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="配送费 ¥ 0"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/shuxian" />
+
+            <TextView
+                android:id="@+id/favorite_product_peisongshijian_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="0分钟"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_back_ground" />
+
+    <LinearLayout
+        android:id="@+id/favorite_list_item_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@drawable/jian" />
+
+        <TextView
+            android:id="@+id/favorite_list_item_bottom_desc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+     <View
+        android:id="@+id/popup_item_fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" 
+        android:background="#f1f0ee"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" 
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/popup_product_type_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="40dp"
+            android:clickable="true"
+            android:src="@drawable/app_default_icon" 
+            android:focusable="false"
+            />
+
+        <TextView
+            android:id="@+id/popup_product_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="樱花小区"
+            android:textColor="#000000" />
+    </LinearLayout>
+	
+   
+</LinearLayout>

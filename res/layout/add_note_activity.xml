@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF"
+        android:padding="10dp" >
+        
+         <ImageView
+            android:id="@+id/merchant_add_note_back_iv" 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/fuwubao_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#FFF"
+            android:text="添加备注"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFF"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/note_et"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="给商家留言"
+            android:textSize="15sp"
+             />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/note_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn_png"
+        android:padding="10dp"
+        android:text="确定"
+        android:textColor="#FFF"
+        android:textSize="17sp" />
+
+</LinearLayout>

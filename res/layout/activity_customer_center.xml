@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customer_center_layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back_ground"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_back_ground" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_back_ground"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/customer_center_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/customer_center_phone_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:drawableLeft="@drawable/customer_icon"
+                    android:drawablePadding="10dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:text="186****8082" />
+            </RelativeLayout>
+
+            <include layout="@layout/activity_line_layout" />
+
+            <LinearLayout
+                android:id="@+id/customer_vallet_linear_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF" >
+
+                <TextView
+                    android:id="@+id/customer_center_wallet_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/customer_balance_icon"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:text="我的余额" />
+
+                <TextView
+                    android:id="@+id/customer_center_wallet1_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/right_icon"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical|right"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="余额 0元" />
+            </LinearLayout>
+
+            <include layout="@layout/activity_line_layout" />
+
+            <TextView
+                android:id="@+id/customer_center_coupons_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableLeft="@drawable/customer_coupons_icon"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_icon"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:text="优惠券" />
+
+            <include layout="@layout/activity_line_layout" />
+
+            <TextView
+                android:id="@+id/customer_center_mgr_address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableLeft="@drawable/customer_mgr_address_icon"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_icon"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:text="管理收获地址" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_back_ground" />
+
+            <TextView
+                android:id="@+id/customer_center_favorite_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableLeft="@drawable/customer_collection_icon"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_icon"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:text="我的收藏" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_back_ground" />
+
+            <TextView
+                android:id="@+id/customer_center_orders_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableLeft="@drawable/customer_order_icon"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_icon"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:text="我的订单" />
+
+            <include layout="@layout/activity_line_layout" />
+            
+            <LinearLayout
+                android:id="@+id/customer_center_version_linear_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF" >
+
+                <TextView
+	                android:id="@+id/customer_center_update_app_tv"
+	                android:layout_width="0dp"
+	                android:layout_weight="1"
+	                android:layout_height="wrap_content"
+	                android:background="#FFF"
+	                android:drawableLeft="@drawable/customer_to_update_icon"
+	                android:drawablePadding="15dp"
+	                android:gravity="center_vertical"
+	                android:padding="10dp"
+	                android:textColor="#000"
+	                android:text="更新软件" />
+
+                <TextView
+                    android:id="@+id/customer_center_version_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/right_icon"
+                    android:gravity="center_vertical|right"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:text="" />
+            </LinearLayout>
+
+            <include layout="@layout/activity_line_layout" />
+
+            <TextView
+                android:id="@+id/customer_center_modify_login_passwd_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableLeft="@drawable/customer_sign_in_icon"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_icon"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:text="修改登录密码" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_back_ground" />
+
+            <!-- <TextView
+                android:id="@+id/customer_center_modify_pay_passwd_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableLeft="@drawable/customer_password_icon"
+                android:drawablePadding="15dp"
+                android:drawableRight="@drawable/right_icon"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:text="支付密码" /> -->
+
+            <include layout="@layout/activity_line_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF" >
+
+                <TextView
+                    android:id="@+id/customer_center_referee_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/customer_recommend_icon"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:text="我的推荐人" />
+
+                <TextView
+                    android:id="@+id/customer_center_referee1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_back_ground" />
+
+            <ImageView
+                android:id="@+id/customer_center_logout_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/customer_logout" />
+
+           <!--  <RelativeLayout
+                android:id="@+id/customer_center_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
+
+                <TextView
+                    android:id="@+id/customer_center_kefudianhua_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="客服电话:400-850-1234" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customer_center_kefudianhua_tv"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="(服务时间：10：00-23：00)"
+                    android:textSize="10sp"/>
+            </RelativeLayout> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

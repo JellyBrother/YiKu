@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back_ground"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/query_charge_title" >
+
+        <ImageView
+	        android:id="@+id/activity_back_iv"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/return_back" />
+	
+	    <TextView
+	        android:id="@+id/activity_title_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:text="我的充值"
+	        android:textColor="#000"
+	        android:textSize="18sp" />
+    </RelativeLayout>
+
+     <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pay_mobile_swipe1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.jack.ui.XListView
+            android:id="@+id/pay_mobile_list_view"
+            android:layout_width="match_parent"
+            android:divider="@null"
+       		android:dividerHeight="0dip"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+        </com.jack.ui.XListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

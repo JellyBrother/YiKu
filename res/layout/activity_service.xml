@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/fuwu_title" />
+
+      <RelativeLayout 
+        android:id="@+id/header"
+        android:visibility="gone"
+        android:layout_width="fill_parent"	
+        android:layout_height="36dp"
+        android:background="@drawable/hh">
+
+        <TextView
+            android:id="@+id/head_title"
+          	android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textColor="#ffffff" 
+			android:textSize="18sp"
+ 			android:layout_centerInParent="true"
+            android:text="易商通生活服务" />
+
+        <ImageView
+            android:id="@+id/btn_gr"
+            style="@style/styleHeadRight"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:background="@drawable/person"
+            android:textColor="#ffffff" />
+        
+          <ImageView
+            android:id="@+id/btn_bar"
+            style="@style/styleHeadLeft"
+              android:layout_width="28dip"
+            android:layout_height="28dip"
+            android:src="@drawable/top_bar"
+            android:layout_alignParentLeft="true"
+            android:onClick="onClick"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+      
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="62dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+             android:layout_height="wrap_content"
+             >
+            
+                   <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#E0E0E0"
+            android:layout_height="wrap_content" >
+        
+                        <LinearLayout style="@style/styleLine" 
+                            android:visibility="gone"
+                            android:background="#657076"
+                            >
+
+                <FrameLayout style="@style/styleItem"
+                    android:layout_height="120dp"
+                    >
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_tshy"
+                         android:layout_height="70dp"
+                          android:layout_width="63dp"
+                       android:background="@drawable/se_tshy" />
+                </FrameLayout>
+
+                <FrameLayout 
+                     android:layout_height="120dp"
+                    style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_ykt"
+                         android:layout_height="70dp"
+                         android:layout_width="70dp"
+                       android:background="@drawable/se_ykt" />
+                </FrameLayout>
+            </LinearLayout>
+                       
+                       
+                       
+                   <!--1 ============================================================================== -->
+            <LinearLayout style="@style/styleLine3" >
+                
+                <FrameLayout style="@style/styleItem3" >
+
+                    <Button
+                        style="@style/styleImage3"
+                        android:id="@+id/ser_yygh"
+                       android:background="@drawable/se_yygh" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_sf"
+                       android:background="@drawable/se_sfjn" />
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                          android:id="@+id/ser_df"
+                       android:background="@drawable/se_dfjn" />
+                </FrameLayout>
+            </LinearLayout>
+            <!-- ================================================================================ -->
+         	<!--2 ============================================================================== -->
+            <LinearLayout style="@style/styleLine3" >
+
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                        android:id="@+id/ser_rqf"
+                       android:background="@drawable/se_rqfjn" />
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                        android:id="@+id/ser_hfcz"
+                       android:background="@drawable/se_hfcz" />
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                        android:id="@+id/ser_kdcx"
+                       android:background="@drawable/se_kdcx" />
+                </FrameLayout>
+
+                <FrameLayout 
+                    android:visibility="gone"
+                    style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_zsh"
+                       android:background="@drawable/se_yzjy" />
+                </FrameLayout>
+                
+                
+                
+            </LinearLayout>
+            <!-- ================================================================================ -->
+         	<!--3 ============================================================================== -->
+            <LinearLayout style="@style/styleLine3" >
+                
+                <FrameLayout 
+                    android:visibility="gone"
+                    style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_wmsc"
+                       android:background="@drawable/se_wm" />
+                </FrameLayout>
+
+                <FrameLayout 
+                    android:visibility="gone"
+                    style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                        android:id="@+id/ser_lmsh"
+                       android:background="@drawable/se_lmsh" />
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                        android:id="@+id/ser_jqmp"
+                       android:background="@drawable/se_jqmp" />
+                </FrameLayout>
+
+                <FrameLayout 
+                    android:visibility="gone"
+                    style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_dyp"
+                       android:background="@drawable/se_dyp" />
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_jdyd"
+                       android:background="@drawable/se_jdyd" />
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_jp"
+                       android:background="@drawable/se_fjp" />
+                </FrameLayout>
+            </LinearLayout>
+            <!-- ================================================================================ -->
+           	<!--4 ============================================================================== -->
+            <LinearLayout style="@style/styleLine3" >
+
+                
+
+                
+                
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_hcp"
+                       android:background="@drawable/se_hcp" />
+                </FrameLayout>
+                
+                 <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                        android:id="@+id/ser_qcp"
+                       android:background="@drawable/se_qcp" />
+                </FrameLayout>
+                
+                 <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                        android:id="@+id/ser_dc"
+                       android:background="@drawable/se_dc" />
+                </FrameLayout>
+            </LinearLayout>
+            <!-- ================================================================================ -->
+         <!--5 ============================================================================== -->
+            <LinearLayout style="@style/styleLine3" >
+
+               
+
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_zc"
+                       android:background="@drawable/se_zc" />
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_dj"
+                       android:background="@drawable/se_dj" />
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_wzcx"
+                       android:background="@drawable/se_wzcx" />
+                </FrameLayout>
+            </LinearLayout>
+            <!-- ================================================================================ -->
+         <!--6 ============================================================================== -->
+            <LinearLayout 
+                android:visibility="gone"
+                style="@style/styleLine3" >
+
+                
+                
+                
+
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_hyyd"
+                       android:background="@drawable/se_hqyd" />
+                </FrameLayout>
+            </LinearLayout>
+            <!-- ================================================================================ -->
+          <!--7 ============================================================================== -->
+            <LinearLayout 
+                android:visibility="gone"
+                style="@style/styleLine3" >
+                <FrameLayout style="@style/styleItem3">
+
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                </FrameLayout>
+                
+                <FrameLayout 
+                    android:visibility="gone"
+                    style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_sqfw"
+                       android:background="@drawable/se_sqfw" />
+                </FrameLayout>
+            </LinearLayout>
+            <!-- ================================================================================ -->
+         
+          <!--8 ============================================================================== -->
+            <LinearLayout 
+                android:visibility="gone"
+                style="@style/styleLine3" >
+
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                        android:id="@+id/ser_yygh"
+                       android:background="@drawable/se_yygh" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem3">
+
+                </FrameLayout>
+                
+                <FrameLayout style="@style/styleItem3">
+
+                 
+                </FrameLayout>
+            </LinearLayout>
+            
+            
+             </LinearLayout>
+            
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="2dip"
+            android:background="#E0E0E0"
+            android:visibility="gone"
+            android:layout_height="wrap_content" >
+            
+ 
+            
+            
+			<!--1 **************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_tshy"
+                       android:background="@drawable/ser_tshy" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_ykt"
+                       android:background="@drawable/ser_ykt" />
+                </FrameLayout>
+            </LinearLayout>
+            <View style="@style/divider"/>
+            <!-- **************************** -->
+			<!--2 **************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem" >
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_hfcz"
+                       android:background="@drawable/ser_hfcz" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_sf"
+                       android:background="@drawable/ser_sf" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+			<!--3 **************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem" >
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_df"
+                       android:background="@drawable/ser_df" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_rqf"
+                       android:background="@drawable/ser_rqf" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+			<!-- 4**************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem" >
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_zsh"
+                       android:background="@drawable/ser_zsh" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_cp"
+                       android:background="@drawable/ser_cp" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+			<!-- 5**************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem" >
+
+                    <Button
+                        android:id="@+id/ser_lmsh"
+                        style="@style/styleImage"
+                       android:background="@drawable/ser_lmsh" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_dyp"
+                       android:background="@drawable/ser_dyp" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+			<!--6 **************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem" >
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_jdyd"
+                       android:background="@drawable/ser_jdyd" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_jqmp"
+                       android:background="@drawable/ser_jqmp" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+			<!--7 **************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem" >
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_jp"
+                       android:background="@drawable/ser_jp" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_hcp"
+                       android:background="@drawable/ser_hcp" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+			<!-- 8**************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem" >
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_qcp"
+                       android:background="@drawable/ser_qcp" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_zc"
+                       android:background="@drawable/ser_zc" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+			<!-- 9**************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem" >
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_dj"
+                       android:background="@drawable/ser_dj" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_dc"
+                       android:background="@drawable/ser_dc" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+			<!-- 10**************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem" >
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_wmsc"
+                       android:background="@drawable/ser_wmsc" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_hyyd"
+                       android:background="@drawable/ser_hyyd" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+			<!-- 11**************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem" >
+
+                    <Button
+                        style="@style/styleImage"
+                        android:id="@+id/ser_kdcx"
+                       android:background="@drawable/ser_kdcx" />
+                </FrameLayout>
+
+                <FrameLayout style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_wzcx"
+                       android:background="@drawable/ser_wzcx" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+			<!-- 12**************************** -->
+            <LinearLayout style="@style/styleLine" >
+
+                <FrameLayout style="@style/styleItem3">
+
+                    <Button
+                        style="@style/styleImage3"
+                         android:id="@+id/ser_cp"
+                       android:background="@drawable/se_cptz" />
+                </FrameLayout>
+
+                <FrameLayout 
+                    android:visibility="gone"
+                    style="@style/styleItem">
+
+                    <Button
+                        style="@style/styleImage"
+                         android:id="@+id/ser_sqfw"
+                       android:background="@drawable/ser_sqfw" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            
+          
+            
+            
+            <!-- **************************** -->
+            <View style="@style/divider"/>
+    		<!-- 13**************************** -->
+            
+        
+            <LinearLayout style="@style/styleLine" android:layout_marginBottom="10dp">
+
+                <FrameLayout
+                    style="@style/styleItem"
+                    android:layout_height="200dip" >
+
+                    <ImageView
+                        android:id="@+id/ser_bar_yst"
+                        style="@style/styleImage"
+                        android:layout_height="200dip"
+                        android:background="@drawable/ser_bar_yst" />
+                </FrameLayout>
+
+                <FrameLayout
+                    style="@style/styleItem"
+                    android:layout_height="200dip" >
+
+                    <ImageView
+                        android:id="@+id/ser_bar_ystwx"
+                        style="@style/styleImage"
+                        android:layout_height="200dip"
+                        android:background="@drawable/ser_bar_ystwx" />
+                </FrameLayout>
+            </LinearLayout>
+             <!-- **************************** -->
+        </LinearLayout>
+        
+ 
+            <!-- ================================================================================ -->
+         
+            </LinearLayout>
+    </ScrollView>
+
+    
+    <RelativeLayout android:layout_width="match_parent" 
+        android:background="#aa393436"
+        android:id="@+id/bar_layout"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_height="match_parent">
+        <ImageView android:layout_height="wrap_content"
+            android:src="@drawable/se_bar"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            />
+        
+        
+    </RelativeLayout>
+    
+    
+    </FrameLayout>
+        <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone"
+    android:background="#201111"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"  >
+
+        <ImageView
+            android:id="@+id/btn_tab1"
+            style="@style/styleWrapHeight"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:onClick="onFooterClick"
+            android:scaleType="centerInside"
+            android:background="@drawable/service_tgm" />
+
+        <ImageView
+            android:id="@+id/btn_tab2"
+            style="@style/styleWrapHeight"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:onClick="onFooterClick"
+            android:scaleType="centerInside"
+            android:background="@drawable/service_tmd" />
+
+        <ImageView
+            android:id="@+id/btn_tab3"
+            style="@style/styleWrapHeight"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:onClick="onFooterClick"
+            android:scaleType="centerInside"
+            android:background="@drawable/service_shfu" />
+    </LinearLayout>
+
+</LinearLayout>

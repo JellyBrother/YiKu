@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_back_ground" >
+
+    <include layout="@layout/activity_title_layout" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/balance_detail_swipe_view"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent" >
+
+        <com.jack.ui.XListView
+            android:id="@+id/balance_detail_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+       		android:dividerHeight="0dip"
+       		android:fadingEdge="none"
+            android:scrollbars="none" >
+        </com.jack.ui.XListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

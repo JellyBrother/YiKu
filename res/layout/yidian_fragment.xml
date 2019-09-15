@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f0ee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/yidian_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FFF" />
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:cacheColorHint="#00000000"
+        android:childIndicatorLeft="0dp"
+        android:fadingEdge="none"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:padding="15dp"
+        android:scrollbars="none"
+        android:verticalSpacing="30dp" >
+    </GridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FFF" />
+
+    <View
+        android:id="@+id/top_fengexian"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <include layout="@layout/yidian_fenlei" 
+        />
+    
+</LinearLayout>

@@ -1,0 +1,331 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yst.yiku"
+    android:versionCode="1"
+    android:versionName="1.11" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 解锁的权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 亮屏的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+    <uses-feature android:name="android.hardware.flash" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- android:icon="@drawable/tongyong_icon_login" -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" /> -->
+
+
+    <!-- 高德地图定位权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="4cc3cddcb90d9ca1178ca003ff342cd3"/>
+
+			<!--王俊本地key 8125d85cafd7b7d698402ff8769065f0 -->
+			<!--李向超本地key aa0ee8a9670fc7c3f1a18b1db391a2e6 -->
+			<!--秦超帅本地key 4f3413021cd39f9b79a388f00f9b96c9 -->
+			<!-- 发布key 4cc3cddcb90d9ca1178ca003ff342cd3 -->
+			
+		 <activity
+            android:name="com.yst.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+		 <activity
+            android:name="com.yst.activity.GuideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:launchMode="singleTask"
+            >
+        </activity>
+         <activity
+            android:name="com.yst.activity.PayTheFeesActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:launchMode="singleTask"
+            >
+        </activity>
+        <activity
+            android:name="com.yst.activity.SubmitOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yst.activity.NewInvoiceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yst.activity.InvoiceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yst.activity.AddNoteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:name="com.yst.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name="com.yst.activity.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.CustomerCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.ForgetPasswdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.ModifyPasswdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.CustomerOrdersActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.CouponsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.ShippingAddressMgrActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.ShippingAddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.FavoriteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.EvaluateOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.OrderDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.yst.activity.BalanceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity
+            android:name="com.yst.activity.BalanceDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         
+        <activity
+            android:name="com.yst.activity.ShowOrderPayActivity"
+            android:screenOrientation="portrait" 
+            android:launchMode="singleTask"
+            >
+        </activity>
+        
+         <activity
+            android:name="com.yst.activity.BalanceRechargeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <activity 
+             android:name="com.jack.chengshidingwei.MallStoreGPSSearchActivity" 
+             android:screenOrientation="portrait">
+        </activity>
+         <activity 
+             android:name="com.yst.activity.YiDianFenLeiActivity" 
+             android:screenOrientation="portrait">
+        </activity>
+         <activity 
+             android:name="com.yst.activity.StoreDetailActivity" 
+             android:screenOrientation="portrait">
+        </activity>
+         <activity 
+             android:name="com.yst.activity.CheckAddressActivity" 
+             android:screenOrientation="portrait">
+        </activity>
+        <activity 
+             android:name="com.yst.activity.StoreProductDetailsActivity" 
+             android:screenOrientation="portrait">
+        </activity>
+        <activity 
+             android:name="com.yst.activity.CityListActivity" 
+             android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+             android:name="com.yst.activity.YiDianStoreGoodsActivity" 
+             android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+             android:name="com.yst.activity.YiDianProductDetailActivity" 
+             android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+             android:name="com.yst.activity.QueryChargeActivity" 
+             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+             android:screenOrientation="portrait">
+        </activity>
+        <activity 
+             android:name="com.yst.activity.QueryChargeListActivity" 
+             android:screenOrientation="portrait">
+        </activity>
+        
+         <activity
+            android:name="com.yst.activity.Zhifu_WebviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.yst.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.yst.activity.PayMobileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yst.activity.PayMobileDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        
+         <activity android:name="com.unionpay.uppay.PayActivity">
+        </activity>
+        
+         <!-- 支付宝 -->
+        <activity
+			android:name="com.alipay.sdk.app.H5PayActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:exported="false"
+			android:screenOrientation="behind" >
+		</activity>
+		<activity
+			android:name="com.alipay.sdk.auth.AuthActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:exported="false"
+			android:screenOrientation="behind" >
+		</activity>
+        
+    </application>
+
+</manifest>

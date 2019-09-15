@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/query_charge_title" >
+
+        <ImageView
+            android:id="@+id/query_charge_back_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/return_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="充值方式"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/query_charge_balance_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:text=""
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/query_charge_pay_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/black_border1_png"
+        android:text=""
+        android:textSize="12sp" />
+    
+    <RelativeLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+        
+        <Button
+            android:id="@+id/pay_mobile_pay_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:text="支付"
+            android:textColor="#FFF"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@drawable/query_pay_btn_png"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

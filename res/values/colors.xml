@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="main_back_ground">#F1F0EE</color>
+    
+    <color name="line_back_ground">#DFDFDD</color>
+    
+    <color name="login_back_ground">#00BDFF</color>
+    
+    <color name="login_black_back_ground">#B8B8B8</color>
+    
+     <color name="camera_pop_normal">#5DB8FE</color>
+    
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of gray -->
+    <color name="holo_gray_light">#33999999</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <!-- A really bright Holo shade of gray -->
+    <color name="holo_gray_bright">#33CCCCCC</color>
+    
+    <color name="background">#f1f0ee</color>
+    <color name="blue">#ff50c3eb</color>
+    <color name="blue1">#3e539d</color> 
+    <color name="blue2">#2b4395</color>
+    <color name="blue3">#0274a6</color>
+    <color name="blue4">#3f529e</color>
+    <color name="blue5">#01597f</color>
+    <color name="white1">#fbf9f2</color>
+    <color name="white2">#f1f1f1</color>
+    <color name="black1">#020202</color>
+    <color name="black3">#5f5d5d</color>
+    <color name="celltitle">#ff7f7f7f</color>
+    <color name="frame_gray">#ffcecece</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    
+    <color name="query_charge_title">#4594FD</color>
+    
+</resources>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f0ee" >
+
+    <RelativeLayout
+        android:id="@+id/service_pkg_pay_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f9f9f9" >
+
+        <ImageView
+            android:id="@+id/service_pkg_pay_title_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/fuwubao_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="选择支付方式"
+            android:textColor="#737373"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/service_pkg_pay_title_layout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/service_pkg_pay_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16sp"
+                    android:text="敏英大夫-图文咨询"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/service_pkg_pay_price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="40元"
+                    android:textSize="16sp"
+                    android:textColor="#fa6c18" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="选择支付方式" />
+            
+             <RelativeLayout
+                 android:id="@+id/package_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_marginTop="10dp"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/zhifubao_pay_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/homeheathycounselorlist_zhifubao_icon" />
+
+                <TextView
+                    android:id="@+id/zhifubao_pay_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/zhifubao_pay_icon"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="支付宝支付"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/zhifubao_pay_icon"
+                    android:layout_below="@id/zhifubao_pay_name"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="推荐安装支付宝客户端的用户使用"
+                    android:textColor="#aa000000" 
+                    android:textSize="10.5sp"
+                    />
+                <ImageView
+                    android:id="@+id/service_pkg_pay_zhifubao"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/check_enable"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    />
+            </RelativeLayout>
+            <View 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/doctor_diliver_line"
+                />
+            <RelativeLayout
+                android:id="@+id/package_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/zhifubao_pay_icon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/homeheathycounselorlist_tongquan_icon" />
+
+                <TextView
+                    android:id="@+id/zhifubao_pay_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/zhifubao_pay_icon1"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="通币余额"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/zhifubao_pay_icon1"
+                    android:layout_below="@id/zhifubao_pay_name1"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="推荐安装微信5.0及以上版本的用户使用"
+                    android:textColor="#aa000000"
+                    android:textSize="10.5sp"
+                     />
+                <ImageView
+                    android:id="@+id/service_pkg_pay_weixin"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/check_no"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    />
+            </RelativeLayout>
+            <View 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/doctor_diliver_line"
+                />
+            <RelativeLayout
+                android:id="@+id/package_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/zhifubao_pay_icon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/homeheathycounselorlist_yinghangka_icon" />
+
+                <TextView
+                    android:id="@+id/zhifubao_pay_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/zhifubao_pay_icon2"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="银行卡支付"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/zhifubao_pay_icon2"
+                    android:layout_below="@id/zhifubao_pay_name2"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="推荐信用卡持卡人使用"
+                    android:textColor="#aa000000" 
+                    android:textSize="10.5sp"
+                    />
+                <ImageView
+                    android:id="@+id/service_pkg_pay_yinhangka"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/check_no"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    />
+            </RelativeLayout>
+            
+            <Button
+                android:id="@+id/service_pkg_pay_commit_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="立即购买"
+                android:background="#4cce62"
+                android:textColor="#fff"
+                android:layout_marginTop="15dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

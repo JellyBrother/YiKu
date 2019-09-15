@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_back_ground"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/order_status_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/order_status1" />
+        
+        <View
+            android:id="@+id/order_status_line_bottom"
+            android:layout_below="@id/order_status_iv1"
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/login_back_ground"
+            />
+        
+        <View
+            android:id="@+id/order_status_line_top"
+            android:layout_above="@id/order_status_iv1"
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/login_back_ground"
+            />
+        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/left_arrow"
+        android:layout_gravity="center_vertical"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/order_status_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-1dp"
+        android:background="#FFF"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/order_status_name1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:text="订单已提交" />
+
+        <TextView
+            android:id="@+id/order_status_time1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="14:37" />
+
+        <TextView
+            android:id="@+id/order_status_desc1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_status_name1_tv"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="请耐心等待商家确认" />
+    </RelativeLayout>
+
+</LinearLayout>

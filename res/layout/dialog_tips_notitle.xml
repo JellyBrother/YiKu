@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/magin_20dp"
+        android:layout_marginRight="@dimen/magin_20dp"
+        android:layout_marginTop="@dimen/magin_30dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size" />
+
+    <LinearLayout
+        android:id="@+id/layBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/magin_30dp"
+        android:layout_marginLeft="@dimen/magin_20dp"
+        android:layout_marginRight="@dimen/magin_20dp"
+        android:layout_marginTop="@dimen/magin_30dp"
+        android:background="@drawable/dialog_tips_laybtn_notitle"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0.5dp" >
+
+        <Button
+            android:id="@+id/btnCancle"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_tips_notitle1"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_tips_notitle2"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

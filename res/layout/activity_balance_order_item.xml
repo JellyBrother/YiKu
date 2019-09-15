@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/balance_recharge_list_item_layout"
+        layout="@layout/activity_line_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/balance_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/balance_detail_blue_circle" />
+
+        <TextView
+            android:id="@+id/balance_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/balance_icon_iv"
+            android:text="2015-12-12" />
+
+        <TextView
+            android:id="@+id/balance_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:text="余额：300元" />
+
+        <TextView
+            android:id="@+id/balance_order_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/balance_price_tv"
+            android:layout_toRightOf="@id/balance_date_tv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="成功充值100元" />
+    </RelativeLayout>
+
+</LinearLayout>

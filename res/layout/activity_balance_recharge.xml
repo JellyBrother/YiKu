@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back_ground"
+    android:orientation="vertical" >
+
+	<include layout="@layout/activity_title_layout"/>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/balance_detail_item"
+            android:orientation="horizontal" >
+            
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="金额(元)："
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                />
+            
+            <EditText
+                android:id="@+id/balance_recharge_price_et"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:background="@null"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:hint="请输入充值金额"
+                />
+        </LinearLayout>
+        
+<!--         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/balance_detail_item"
+            android:orientation="horizontal" >
+            
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="备　　注："
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                />
+            
+            <EditText
+                android:id="@+id/balance_recharge_des_et"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:hint="我的备注"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+ -->        
+        <Button
+            android:id="@+id/balance_recharge_submit_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:text="确定"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/balance_recharge_un_focus_png"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

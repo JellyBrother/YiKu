@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">易点点</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="cancel">取消</string>
+	<string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    
+    <string name="activity_customer_login_label">登录</string>
+    <string name="activity_customer_center_title_label">个人中心</string>
+    <string name="activity_customer_forget_passwd_label">忘记密码</string>
+    <string name="activity_customer_register_label">注册</string>
+    <string name="activity_customer_modify_passwd_label">修改密码</string>
+    <string name="activity_customer_coupons_label">使用优惠券</string>
+    <string name="activity_customer_favorite_label">我的收藏</string>
+    <string name="activity_customer_orders_label">订单中心</string>
+    <string name="activity_customer_evaluate_order_label">评价</string>
+    <string name="activity_customer_address_label">收货地址</string>
+    <string name="activity_customer_add_address_label">添加收货地址</string>
+    <string name="activity_customer_update_address_label">编辑收货地址</string>
+    <string name="activity_customer_referee_label">未设置推荐人</string>
+    
+    <string name="activity_customer_balance_label">我的余额</string>
+    <string name="activity_customer_balance_details_label">收支明细</string>
+    <string name="activity_customer_balance_recharge_label">充值</string>
+    <string name="activity_customer_pay_order_label">支付订单</string>
+    
+    <string name="Ensure">确定</string>
+    <string name="confirm_install_hint">安装提示</string>
+    <string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。
+
+点击确定，立即安装。"</string>
+    <string name="remote_call_failed">故障呼叫远程服务</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+    
+</resources>
